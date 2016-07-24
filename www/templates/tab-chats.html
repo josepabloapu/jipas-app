@@ -1,0 +1,63 @@
+<ion-view view-title="Ejecicios">
+  <ion-content>
+
+    <label class="item">
+      <button class="button button-block button-positive" ng-click="update()">Actualizar</button>
+    </label>
+
+    <div class="item item-divider">
+      Orientación
+    </div>
+    <ion-list>
+      <ion-item class="item" ng-repeat="item in modelData.orientation" type="item-text-wrap" href="#/tab/chats/{{item._id}}">
+        <h2>{{item.name}}</h2>
+      </ion-item>
+    </ion-list>
+
+    <div class="item item-divider">
+      Memoria
+    </div>
+    <ion-list>
+      <ion-item class="item" ng-repeat="item in modelData.memory" type="item-text-wrap" href="#/tab/chats/{{item._id}}">
+        <h2>{{item.name}}</h2>
+      </ion-item>
+    </ion-list>
+
+    <div class="item item-divider">
+      Lenguaje
+    </div>
+    <ion-list>
+      <ion-item class="item" ng-repeat="item in modelData.language" type="item-text-wrap" href="#/tab/chats/{{item._id}}">
+        <h2>{{item.name}}</h2>
+      </ion-item>
+    </ion-list>
+
+    <div class="item item-divider">
+      Cálculo
+    </div>
+    <ion-list>
+      <ion-item class="item" ng-repeat="item in modelData.calculus" type="item-text-wrap" href="#/tab/chats/{{item._id}}">
+        <h2>{{item.name}}</h2>
+      </ion-item>
+    </ion-list>
+
+    <div class="item item-divider">
+      Praxias
+    </div>
+    <ion-list>
+      <ion-item class="item" ng-repeat="item in modelData.praxias" type="item-text-wrap" href="#/tab/chats/{{item._id}}">
+        <h2>{{item.name}}</h2>
+      </ion-item>
+    </ion-list>
+
+    <div class="item item-divider">
+      Gnosias
+    </div>
+    <ion-list>
+      <ion-item class="item" ng-repeat="item in modelData.gnosias" type="item-text-wrap" href="#/tab/chats/{{item._id}}">
+        <h2>{{item.name}}</h2>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>

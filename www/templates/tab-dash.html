@@ -1,0 +1,19 @@
+<ion-view view-title="Información">
+  <ion-content class="padding">
+
+    <div ng-show="error" class="alert alert-danger">{{errorMessage}}</div>
+    <div ng-show="success" class="alert alert-success">{{successMessage}}</div>
+
+    <div>
+      <h1>Hola {{user.name}}</h1>
+    </div>
+
+    <div ng-show="item.value" ng-repeat="item in categoryList">
+      <div class="item item-divider">
+        {{item.text}}
+      </div>
+        {{item.value}}
+    </div>
+
+  </ion-content>
+</ion-view>
